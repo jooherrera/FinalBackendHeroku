@@ -3,16 +3,15 @@
   <div class='chatWindow' id='mensajes'></div>
   {{#if data}}
 
-       <h1 class="text-center text-danger">HAY mensajes</h1>
     {{#each data}}
       <div>
-        <b style="color:blue">{{sennder}}</b>
-        [<span style="color:brown;">{{sendAt}}</span>] :
-        <i style="color:green">{{message}}</i>
+        <b style='color:blue'>{{sennder}}</b>
+        [<span style='color:brown;'>{{sendAt}}</span>] :
+        <i style='color:green'>{{message}}</i>
       </div>
-      <hr>
-      {{/each}}
+      <hr />
+    {{/each}}
   {{else}}
-     <h1 class="text-center text-danger">No se encontraron mensajes</h1>
+    <h1 class='text-center text-danger'>No se encontraron mensajes</h1>
   {{/if}}
 </div>
