@@ -1,0 +1,18 @@
+<div class='container'>
+  <h3 class='text-center'>Centro de mensajes</h3>
+  <div class='chatWindow' id='mensajes'></div>
+  {{#if data}}
+
+       <h1 class="text-center text-danger">HAY mensajes</h1>
+    {{#each data}}
+      <div>
+        <b style="color:blue">{{sennder}}</b>
+        [<span style="color:brown;">{{sendAt}}</span>] :
+        <i style="color:green">{{message}}</i>
+      </div>
+      <hr>
+      {{/each}}
+  {{else}}
+     <h1 class="text-center text-danger">No se encontraron mensajes</h1>
+  {{/if}}
+</div>
